@@ -16,10 +16,13 @@ body {
 
 header {
   background-color: black;
-  text-align: center;
   font-size: larger;
+  text-align: center;
 }
 
+p {
+  text-align: justify;
+}
 section {
   background-color: var(--clr-background);
 }
