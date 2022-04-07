@@ -13,7 +13,6 @@ body {
   color: var(--clr-font);
   font-family: "Space Grotesk", "Sans Serif";
   margin: 0;
-  width: 100%;
 }
 
 header {
