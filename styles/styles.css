@@ -14,3 +14,7 @@ body {
   font-family: "Space Grotesk", "Sans Serif";
   margin: 0;
 }
+
+header {
+  background-color: var(--clr-black);
+}
