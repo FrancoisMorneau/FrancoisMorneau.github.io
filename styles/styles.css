@@ -17,4 +17,6 @@ body {
 
 header {
   background-color: var(--clr-black);
+  text-align: center;
+  font-size: larger;
 }
