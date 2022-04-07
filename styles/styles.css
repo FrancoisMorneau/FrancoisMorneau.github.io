@@ -23,6 +23,3 @@ header {
 p {
   text-align: justify;
 }
-section {
-  background-color: var(--clr-background);
-}
