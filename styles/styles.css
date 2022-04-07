@@ -13,10 +13,15 @@ body {
   color: var(--clr-font);
   font-family: "Space Grotesk", "Sans Serif";
   margin: 0;
+  width: 100%;
 }
 
 header {
   background-color: var(--clr-black);
   text-align: center;
   font-size: larger;
+}
+
+section {
+  display: block;
 }
