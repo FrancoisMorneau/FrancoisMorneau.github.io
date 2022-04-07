@@ -3,7 +3,6 @@
 :root {
   --clr-red: #da2e3f;
   --clr-font: #ebebeb;
-  --clr-black: #000000;
   --clr-background: #1e2122;
   --clr-red2: #ae2222;
 }
@@ -13,11 +12,14 @@ body {
   color: var(--clr-font);
   font-family: "Space Grotesk", "Sans Serif";
   margin: 0;
-  text-decoration: none;
 }
 
 header {
-  background-color: var(--clr-black);
+  background-color: black;
   text-align: center;
   font-size: larger;
+}
+
+section {
+  background-color: var(--clr-background);
 }
