@@ -5,6 +5,7 @@
   --clr-font: #ebebeb;
   --clr-black: #000000;
   --clr-background: #1e2122;
+  --clr-red2: #ae2222;
 }
 
 body {
@@ -17,7 +18,48 @@ body {
 header {
   background-color: var(--clr-black);
 }
-button {
+/* unvisited link */
+a:link {
   background-color: var(--clr-red);
+  color: black;
+  font-weight: bold;
+  border: 2px solid var(--clr-red2);
+  padding: 5px 10px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
 }
-/* */
+/* selected link */
+a:active {
+  background-color: var(--clr-red);
+  color: black;
+  font-weight: bold;
+  border: 2px solid var(--clr-red2);
+  padding: 5px 10px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+}
+/* visited link */
+a:visited {
+  background-color: var(--clr-red);
+  color: black;
+  font-weight: bold;
+  border: 2px solid var(--clr-red2);
+  padding: 5px 10px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+}
+
+/* mouse over link */
+a:hover {
+  background-color: var(--clr-red);
+  color: black;
+  font-weight: bold;
+  border: 2px solid var(--clr-red2);
+  padding: 5px 10px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+}
