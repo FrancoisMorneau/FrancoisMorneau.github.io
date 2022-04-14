@@ -24,3 +24,18 @@ p {
   text-align: justify;
   text-decoration: none;
 }
+.Biographie {
+  text-align: center, justify;
+  text-decoration: none;
+}
+.Projets {
+  text-align: center, justify;
+  text-decoration: none;
+}
+.grid-container {
+  display: grid;
+  grid-template-areas:
+    "header header header header"
+    "content content content content"
+    "footer footer footer footer";
+}
