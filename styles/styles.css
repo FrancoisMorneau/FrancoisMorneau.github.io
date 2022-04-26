@@ -13,14 +13,51 @@ body {
   font-family: "Space Grotesk", "Sans Serif";
   margin: 0;
 }
+nav {
+  margin: 0;
+  position: sticky;
+}
 
+ul {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-rows: 1;
+  list-style: none;
+}
+li {
+  margin: 0;
+}
+li a {
+  display: block;
+  padding: 8px;
+  background-color: #ae2222;
+  margin: 0;
+}
+.Biographie {
+  text-align: center, justify;
+  text-decoration: none;
+}
+.Projets {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr;
+  text-align: center, justify;
+  text-decoration: none;
+}
+.projets header {
+  background-color: black;
+  font-size: larger;
+  text-align: center;
+  grid-row: 1;
+}
+.projets img {
+  grid-area: row 2;
+}
+.footer {
+  flex-flow: row, wrap;
+}
 header {
   background-color: black;
   font-size: larger;
   text-align: center;
-}
-
-p {
-  text-align: justify;
-  text-decoration: none;
 }
