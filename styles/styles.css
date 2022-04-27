@@ -43,7 +43,6 @@ body {
   background-color: var(--clr-red);
 }
 .biographie {
-  text-align: center, justify;
   text-decoration: none;
 }
 .biographie h3 {
@@ -51,7 +50,9 @@ body {
 }
 .biographie p {
   width: 50vw;
-  align-self: center;
+  text-align: center;
+  padding-left: 25vw;
+  padding-right: 25vw;
 }
 .projets {
   display: grid;
@@ -86,7 +87,7 @@ body {
 }
 h2 {
   background-color: black;
-  font-size: larger;
+  font-size: x-large;
   text-align: center;
-  height: 50px;
+  padding: 2%;
 }
