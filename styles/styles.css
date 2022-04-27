@@ -32,7 +32,7 @@ body {
 
 .navbar li a {
   display: block;
-  padding: 8px;
+  padding: 2vh;
   background-color: var(--clr-red2);
   margin: 0;
   text-decoration: none;
