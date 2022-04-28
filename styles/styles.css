@@ -57,32 +57,19 @@ body {
   padding-right: 25vw;
 }
 .projets {
-  display: grid;
-  grid-template-areas:
-    "image1 image2 image3 image4"
-    "text1 text2 text3 text4"
-    "text5 text6 text7 text8";
-  grid-template-columns: 1fr 1fr 1fr 1fr;
-  grid-template-rows: 1fr 1fr 1fr;
+  display: flex;
+  flex-wrap: wrap;
   text-align: center, justify;
   text-decoration: none;
-  align-items: center;
+}
+.projets div {
+  width: 25vw;
 }
 .projets img {
-  width: 100%;
-  height: auto;
+  width: inherit;
 }
-.projet1 {
-  grid-area: image1;
-}
-.projet1 p {
-  grid-area: text1;
-}
-.projet2 img {
-  grid-area: image2;
-}
-.projet2 p {
-  grid-area: text2;
+.projets p {
+  width: inherit;
 }
 .footer {
   bottom: 0;
