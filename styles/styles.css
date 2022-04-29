@@ -11,9 +11,11 @@ body {
   background-color: var(--clr-background);
   color: var(--clr-font);
   font-family: "Space Grotesk", "Sans Serif";
-  margin: 0;
+  margin: 0px;
   padding-top: 40px;
   letter-spacing: 1px;
+  padding-left: 0px;
+  padding-right: 0px;
 }
 
 h2 {
@@ -29,7 +31,7 @@ h2 {
   overflow: hidden;
   position: fixed;
   top: 0;
-  width: 100vw;
+  width: 100%;
 }
 
 .navbar ul {
@@ -43,10 +45,15 @@ h2 {
 
 .navbar li a {
   display: block;
-  padding: 2vh;
+  padding-top: 2vh;
+  padding-bottom: 2vh;
+  padding-left: 0%;
+  padding-right: 0%;
   background-color: var(--clr-red2);
   margin: 0;
   text-decoration: none;
+  font-weight: bolder;
+  font-size: large;
   color: var(--clr-font);
   text-align: center;
 }
@@ -65,14 +72,19 @@ h2 {
   padding-left: 25vw;
   padding-right: 25vw;
 }
+.center {
+  display: flex;
+  justify-content: space-around;
+}
 .projets {
+  max-width: 80%;
   display: flex;
   flex-wrap: wrap;
-  text-align: center, justify;
   text-decoration: none;
+  gap: 7em;
 }
 .projets div {
-  width: 24vw;
+  width: 25em;
 }
 .projets img {
   width: inherit;
