@@ -5,26 +5,26 @@
   --clr-font: #ebebeb;
   --clr-background: #1e2122;
   --clr-red2: #ae2222;
+  --font-text: "Space Grotesk", "Sans Serif";
+  --clr-black: black;
 }
 
 body {
   background-color: var(--clr-background);
   color: var(--clr-font);
-  font-family: "Space Grotesk", "Sans Serif";
+  font-family: var(--font-text);
   margin: 0px;
   padding-top: 40px;
   letter-spacing: 1px;
-  padding-left: 0px;
-  padding-right: 0px;
 }
 
 h2 {
-  background-color: black;
+  background-color: var(--clr-black);
   font-size: x-large;
   text-align: center;
+  text-transform: uppercase;
   padding-top: 2%;
   padding-bottom: 2%;
-  width: 100vw;
 }
 
 .navbar {
@@ -47,51 +47,68 @@ h2 {
   display: block;
   padding-top: 2vh;
   padding-bottom: 2vh;
-  padding-left: 0%;
-  padding-right: 0%;
-  background-color: var(--clr-red2);
-  margin: 0;
   text-decoration: none;
   font-weight: bolder;
   font-size: large;
   color: var(--clr-font);
   text-align: center;
+  text-transform: uppercase;
 }
-.navbar a:hover {
+
+.navbar li a:link {
+  background-color: var(--clr-red2);
+}
+.navbar li a:visited {
+  background-color: var(--clr-red2);
+}
+.navbar li a:hover {
   background-color: var(--clr-red);
 }
+
 .biographie {
   text-decoration: none;
 }
+
 .biographie h3 {
   text-align: center;
 }
+
 .biographie p {
   width: 50vw;
   text-align: center;
   padding-left: 25vw;
   padding-right: 25vw;
 }
+
 .center {
   display: flex;
   justify-content: space-around;
 }
+
 .projets {
-  max-width: 80%;
+  max-width: 75%;
   display: flex;
   flex-wrap: wrap;
   text-decoration: none;
   gap: 7em;
 }
+
 .projets div {
   width: 25em;
 }
+
 .projets img {
   width: inherit;
 }
+
 .projets p {
   width: inherit;
 }
+
+.projets h4 {
+  text-transform: uppercase;
+}
+
 .footer {
   bottom: 0;
 }
