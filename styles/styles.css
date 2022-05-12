@@ -7,6 +7,7 @@
   --clr-red2: #ae2222;
   --font-text: "Space Grotesk", "Sans Serif";
   --clr-black: black;
+  --resize: 0;
 }
 
 body {
@@ -80,11 +81,6 @@ h2 {
   padding-right: 25vw;
 }
 
-.center {
-  display: flex;
-  justify-content: space-around;
-}
-
 .projets {
   max-width: 75%;
   display: flex;
@@ -95,19 +91,21 @@ h2 {
 
 .projets div {
   width: 25em;
+  padding-left: 5%;
 }
 
 .projets img {
-  width: inherit;
+  width: 50em;
 }
 
 .projets p {
   width: inherit;
+  max-width: fit-content;
   text-transform: uppercase;
-
   box-sizing: content-box;
   background-color: var(--clr-red);
   border-radius: 25px;
+  padding: 3px;
 }
 
 .projets h4 {
@@ -119,8 +117,11 @@ h2 {
 }
 
 .contact {
-  display: flex;
-  justify-content: center;
+  border-radius: 5px;
+  padding: 12px;
+  overflow: hidden;
+  height: var(--resize);
+  width: var(--resize);
 }
 
 input[type="text"],

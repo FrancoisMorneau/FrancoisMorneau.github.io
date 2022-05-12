@@ -14,7 +14,7 @@
           <li><a href="#accueil">accueil</a></li>
           <li><a href="#bio">bio</a></li>
           <li><a href="#projet">projets</a></li>
-          <li><a href="pages/contact.html">contact</a></li>
+          <li><a href="#contact">contact</a></li>
         </ul>
       </nav>
     </header>
@@ -50,7 +50,7 @@
       </section>
       <section>
         <h2 id="projet">projets</h2>
-        <div class="center">
+        <div>
           <div class="projets">
             <div>
               <h4>jeu de mémoire</h4>
@@ -60,49 +60,52 @@
                   alt="Projet en invite de commande windows"
                 />
               </a>
-              <div class="description">
+              <div>
+                <p>c++</p>
+                <p>c++</p>
                 <p>c++</p>
               </div>
             </div>
           </div>
         </div>
       </section>
+      <div class="contact">
+        <form action="action_page.php">
+          <label for="fname">prénom</label> <br />
+          <input
+            type="text"
+            id="fname"
+            name="firstname"
+            placeholder="Votre prénom.."
+          />
+          <br />
+
+          <label for="lname">nom de famille</label> <br />
+          <input
+            type="text"
+            id="lname"
+            name="lastname"
+            placeholder="Votre nom de famille.."
+          />
+          <br />
+          <label for="email">Email</label> <br />
+          <input
+            type="text"
+            id="email"
+            name="email"
+            placeholder="Votre Email.."
+          />
+          <br />
+          <label for="subject">message</label> <br />
+          <textarea
+            id="subject"
+            name="subject"
+            placeholder="Message"
+            style="height: 200px"
+          ></textarea>
+        </form>
+      </div>
     </main>
     <footer class="footer"></footer>
   </body>
 </html>
-<!-- <div class="contact">
-  <form action="action_page.php">
-    <label for="fname">prénom</label>
-    <input
-      type="text"
-      id="fname"
-      name="firstname"
-      placeholder="Votre prénom.."
-    />
-
-    <label for="lname">nom de famille</label>
-    <input
-      type="text"
-      id="lname"
-      name="lastname"
-      placeholder="Votre nom de famille.."
-    />
-
-    <label for="email">Email</label>
-    <input
-      type="text"
-      id="email"
-      name="email"
-      placeholder="Votre Email.."
-    />
-
-    <label for="subject">message</label>
-    <textarea
-      id="subject"
-      name="subject"
-      placeholder="Message"
-      style="height: 200px"
-    ></textarea>
-  </form> -->
-<!-- </div> -->
