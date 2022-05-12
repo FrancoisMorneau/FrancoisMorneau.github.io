@@ -103,6 +103,11 @@ h2 {
 
 .projets p {
   width: inherit;
+  text-transform: uppercase;
+
+  box-sizing: content-box;
+  background-color: var(--clr-red);
+  border-radius: 25px;
 }
 
 .projets h4 {
