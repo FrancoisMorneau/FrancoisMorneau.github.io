@@ -120,8 +120,6 @@ h2 {
   border-radius: 5px;
   padding: 12px;
   overflow: hidden;
-  height: var(--resize);
-  width: var(--resize);
 }
 
 input[type="text"],
