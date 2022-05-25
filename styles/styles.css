@@ -5,22 +5,33 @@
   --clr-font: #ebebeb;
   --clr-background: #1e2122;
   --clr-red2: #ae2222;
+  --font-text: "Space Grotesk", "Sans Serif";
+  --clr-black: black;
 }
 
 body {
   background-color: var(--clr-background);
   color: var(--clr-font);
-  font-family: "Space Grotesk", "Sans Serif";
-  margin: 0;
-  padding: 0;
+  font-family: var(--font-text);
+  margin: 0px;
+  padding-top: 40px;
   letter-spacing: 1px;
+}
+
+h2 {
+  background-color: var(--clr-black);
+  font-size: x-large;
+  text-align: center;
+  text-transform: uppercase;
+  padding-top: 2%;
+  padding-bottom: 2%;
 }
 
 .navbar {
   overflow: hidden;
-  position: sticky;
+  position: fixed;
   top: 0;
-  width: 100vw;
+  width: 100%;
 }
 
 .navbar ul {
@@ -34,51 +45,93 @@ body {
 
 .navbar li a {
   display: block;
-  padding: 2vh;
-  background-color: var(--clr-red2);
-  margin: 0;
+  padding-top: 2vh;
+  padding-bottom: 2vh;
   text-decoration: none;
+  font-weight: bolder;
+  font-size: large;
   color: var(--clr-font);
   text-align: center;
+  text-transform: uppercase;
 }
-.navbar a:hover {
+
+.navbar li a:link {
+  background-color: var(--clr-red2);
+}
+.navbar li a:visited {
+  background-color: var(--clr-red2);
+}
+.navbar li a:hover {
   background-color: var(--clr-red);
 }
+
 .biographie {
   text-decoration: none;
+  justify-content: center;
 }
+
 .biographie h3 {
   text-align: center;
 }
+
 .biographie p {
   width: 50vw;
-  text-align: center;
-  padding-left: 25vw;
-  padding-right: 25vw;
+  padding-left: 30vw;
+  padding-right: 18vw;
 }
+
+.biographie img{
+  width:25em;
+  }
+
 .projets {
+  max-width: 75%;
   display: flex;
   flex-wrap: wrap;
-  text-align: center, justify;
   text-decoration: none;
+  gap: 7em;
 }
+
 .projets div {
-  width: 25vw;
+  width: 25em;
+  padding-left: 5%;
 }
+
 .projets img {
-  width: inherit;
+  width: 50em;
+}
+.projets img:hover{
+  transform: scale(0.8);
 }
 .projets p {
   width: inherit;
+  max-width: fit-content;
+  text-transform: uppercase;
+  box-sizing: content-box;
+  background-color: var(--clr-red);
+  border-radius: 25px;
+  padding: 3px;
 }
-.footer {
-  bottom: 0;
+
+.projets h4 {
+  text-transform: uppercase;
 }
-h2 {
-  background-color: black;
-  font-size: x-large;
-  text-align: center;
-  padding-top: 2%;
-  padding-bottom: 2%;
-  width: 100vw;
+
+.contact {
+  border-radius: 5px;
+  padding: 12px;
+}
+label {
+  text-transform: capitalize;
+}
+input[type="text"],
+select,
+textarea {
+  width: 50%;
+  padding: 12px;
+  border-radius: 4px;
+  box-sizing: border-box;
+  margin-top: 6px;
+  margin-bottom: 16px;
+  resize: vertical;
 }

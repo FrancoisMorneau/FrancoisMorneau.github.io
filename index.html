@@ -4,124 +4,96 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>PORTFOLIO WEB</title>
+    <title>portfolio web</title>
     <link rel="stylesheet" href="styles/styles.css" />
   </head>
   <body id="accueil">
-    <nav class="navbar">
-      <ul>
-        <li><a href="#accueil">ACCUEIL</a></li>
-        <li><a href="#bio">BIO</a></li>
-        <li><a href="#projet">PROJETS</a></li>
-        <li><a href="#contact">CONTACT</a></li>
-      </ul>
-    </nav>
-    <section>
-      <div class="biographie">
-        <h2 id="bio">BIO</h2>
+    <header>
+      <nav class="navbar">
+        <ul>
+          <li><a href="#accueil">accueil</a></li>
+          <li><a href="#bio">bio</a></li>
+          <li><a href="#projet">projets</a></li>
+          <li><a href="#contactform">contact</a></li>
+        </ul>
+      </nav>
+    </header>
+    <main>
+      <section>
+        <div class="biographie">
+          <h2 id="bio">bio</h2>
+          <div class="photo-moi">
+            <p>
+              Depuis aussi loin que je me souvienne,
+              le monde du jeu vidéo m’a toujours passionné.
+              C’est ce qui m’a mené à la technique en informatique au cégep de Rimouski.
+              Je compte me perfectionner avec des études universitaires. 
+              Mon objectif est de travailler en tant que développeur de jeux vidéo. 
+            </p>
+          <img 
+          src="images\moiPortfolio.jpg"
+          alt="Francois"/>
 
-        <h3>Mon nom est François et je suis un étudiant en informatique</h3>
-
-        <p>
-          Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Maecenas
-          porttitor congue massa.Pellentesque habitant morbi tristique senectus
-          et netus et malesuada fames ac turpis egestas. Proin pharetra nonummy
-          pede. Mauris et orci. Aenean nec lorem. In porttitor. Donec
-          laoreetnonummy augue. Suspendisse dui purus, scelerisque at, vulputate
-          vitae, pretium mattis, nunc. Lorem ipsum dolor sit amet, consectetuer
-          adipiscing elit. Maecenas porttitor congue massa.Pellentesque habitant
-          morbi tristique senectus et netus et malesuada fames ac turpis
-          egestas. Proin pharetra nonummy pede. Mauris et orci. Aenean nec
-          lorem. In porttitor. Donec laoreetnonummy augue. Suspendisse dui
-          purus, scelerisque at, vulputate vitae, pretium mattis, nunc. Lorem
-          ipsum dolor sit amet, consectetuer adipiscing elit. Maecenas porttitor
-          congue massa.Pellentesque habitant morbi tristique senectus et netus
-          et malesuada fames ac turpis egestas. Proin pharetra nonummy pede.
-          Mauris et orci. Aenean nec lorem. In porttitor. Donec laoreetnonummy
-          augue. Suspendisse dui purus, scelerisque at, vulputate vitae, pretium
-          mattis, nunc.
-        </p>
+          </div>
+        </div>
+      </section>
+      <section>
+        <h2 id="projet">projets</h2>
+        <div>
+          <div class="projets">
+            <div>
+              <h4>jeu de mémoire</h4>
+              <div>
+              <a href="pages\projet jeu mémoire.html">
+                <img
+                  src="images\photoProjetTP2.1.png"
+                  alt="Projet en invite de commande windows"
+                />
+              </a>
+            </div>
+              <div>
+                <p>c++</p>
+                <p>header</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <div class="contact" id="contactform">
+        <form action="action_page.php">
+          <label for="fname">prénom</label> <br />
+          <input
+            type="text"
+            id="fname"
+            name="firstname"
+            placeholder="Votre prénom.."
+          />
+          <br />
+          <label for="lname">nom de famille</label> <br />
+          <input
+            type="text"
+            id="lname"
+            name="lastname"
+            placeholder="Votre nom de famille.."
+            />
+          <br />
+          <label for="email">Email</label> <br />
+          <input
+            type="text"
+            id="email"
+            name="email"
+            placeholder="Votre Email.."
+          />
+          <br />
+          <label for="subject">message</label> <br />
+          <textarea
+            id="subject"
+            name="subject"
+            placeholder="Message"
+            style="height: 200px"
+          ></textarea>
+        </form>
       </div>
-    </section>
-    <section>
-      <h2 id="projet">PROJETS</h2>
-      <div class="projets">
-        <div>
-          <img
-            src="images\DeepLearning.png"
-            alt="Diagramme sur l'apprentissage profond"
-          />
-          <p>
-            Pellentesque habitant morbi tristique senectus et netus et malesuada
-            fames ac turpis egestas. Aenean nec lorem. In porttitor. Donec
-            laoreet nonummy augue. Suspendisse dui purus, scelerisque at,
-            vulputate vitae, pretium mattis, nunc.
-          </p>
-        </div>
-        <div>
-          <img
-            src="images\DeepLearning.png"
-            alt="Diagramme sur l'apprentissage profond"
-          />
-          <p>
-            Pellentesque habitant morbi tristique senectus et netus et malesuada
-            fames ac turpis egestas. Aenean nec lorem. In porttitor. Donec
-            laoreet nonummy augue. Suspendisse dui purus, scelerisque at,
-            vulputate vitae, pretium mattis, nunc.
-          </p>
-        </div>
-        <div>
-          <img
-            src="images\DeepLearning.png"
-            alt="Diagramme sur l'apprentissage profond"
-          />
-          <p>
-            Pellentesque habitant morbi tristique senectus et netus et malesuada
-            fames ac turpis egestas. Aenean nec lorem. In porttitor. Donec
-            laoreet nonummy augue. Suspendisse dui purus, scelerisque at,
-            vulputate vitae, pretium mattis, nunc.
-          </p>
-        </div>
-        <div>
-          <img
-            src="images\DeepLearning.png"
-            alt="Diagramme sur l'apprentissage profond"
-          />
-          <p>
-            Pellentesque habitant morbi tristique senectus et netus et malesuada
-            fames ac turpis egestas. Aenean nec lorem. In porttitor. Donec
-            laoreet nonummy augue. Suspendisse dui purus, scelerisque at,
-            vulputate vitae, pretium mattis, nunc.
-          </p>
-        </div>
-        <div>
-          <img
-            src="images\DeepLearning.png"
-            alt="Diagramme sur l'apprentissage profond"
-          />
-          <p>
-            Pellentesque habitant morbi tristique senectus et netus et malesuada
-            fames ac turpis egestas. Aenean nec lorem. In porttitor. Donec
-            laoreet nonummy augue. Suspendisse dui purus, scelerisque at,
-            vulputate vitae, pretium mattis, nunc.
-          </p>
-        </div>
-        <div>
-          <img
-            src="images\DeepLearning.png"
-            alt="Diagramme sur l'apprentissage profond"
-          />
-          <p>
-            Pellentesque habitant morbi tristique senectus et netus et malesuada
-            fames ac turpis egestas. Aenean nec lorem. In porttitor. Donec
-            laoreet nonummy augue. Suspendisse dui purus, scelerisque at,
-            vulputate vitae, pretium mattis, nunc.
-          </p>
-        </div>
-      </div>
-    </section>
-    <footer class="footer">
-      <button><a href="#contact-form">Contact</a></button>
-    </footer>
+    </main>
   </body>
 </html>
