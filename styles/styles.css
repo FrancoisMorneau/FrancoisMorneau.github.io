@@ -67,6 +67,7 @@ h2 {
 
 .biographie {
   text-decoration: none;
+  justify-content: center;
 }
 
 .biographie h3 {
@@ -75,10 +76,13 @@ h2 {
 
 .biographie p {
   width: 50vw;
-  text-align: center;
-  padding-left: 24vw;
-  padding-right: 24vw;
+  padding-left: 30vw;
+  padding-right: 18vw;
 }
+
+.biographie img{
+  width:25em;
+  }
 
 .projets {
   max-width: 75%;
@@ -96,7 +100,9 @@ h2 {
 .projets img {
   width: 50em;
 }
-
+.projets img:hover{
+  transform: scale(0.8);
+}
 .projets p {
   width: inherit;
   max-width: fit-content;
@@ -109,10 +115,6 @@ h2 {
 
 .projets h4 {
   text-transform: uppercase;
-}
-
-.footer {
-  bottom: 0;
 }
 
 .contact {
